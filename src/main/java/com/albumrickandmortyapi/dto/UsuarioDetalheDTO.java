@@ -16,6 +16,7 @@ public class UsuarioDetalheDTO {
 
     // Construtor estático para mapeamento
     // Isso daqui faz o mapeamento da entidade Usuario para o DTO UsuarioDetalheDTO, ou seja pega os dados do Usuario( entidade ) e coloca no DTO
+    // ELA PRECISA DO METODO fromEntity porque é um DTO de saida ( OUTPUT )
     public static UsuarioDetalheDTO fromEntity(Usuario usuario) {
         Long albumId = (usuario.getAlbum() != null) ? usuario.getAlbum().getId() : null;
 

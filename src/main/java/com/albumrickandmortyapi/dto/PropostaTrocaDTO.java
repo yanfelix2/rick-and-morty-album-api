@@ -9,4 +9,6 @@ public class PropostaTrocaDTO {
     private Long figurinhaOferecidaId; // ID da figurinha que ele vai dar
     private Long receptorId; // Quem vai receber a proposta
     private Long figurinhaDesejadaId; // ID da figurinha que ele quer receber
+
+    // Aqui não é preciso do metodo FromEntity pq é um DTO DE entrada
 }
